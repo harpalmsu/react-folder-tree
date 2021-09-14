@@ -1,0 +1,39 @@
+{
+  "animalTree": [
+    {
+      "id": 1,
+      "name": "root1",
+      "parentId": 0
+    },
+    {
+      "id": 2,
+      "name": "ant",
+      "parentId": 1
+    },
+    {
+      "id": 3,
+      "name": "bear",
+      "parentId": 1
+    },
+    {
+      "id": 4,
+      "name": "frog",
+      "parentId": 1
+    },
+    {
+      "id": 5,
+      "name": "cat",
+      "parentId": 3
+    },
+    {
+      "id": 6,
+      "name": "dog",
+      "parentId": 3
+    },
+    {
+      "id": 7,
+      "name": "elephant",
+      "parentId": 6
+    }
+  ]
+}
