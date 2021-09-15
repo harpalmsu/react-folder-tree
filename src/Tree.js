@@ -1,8 +1,26 @@
 import data from "./data.json";
 import ListItem from "./ListItem";
+import { iterativeTreeLog } from"./logger"
 
 export default function Tree() {
   const unflatternTree = unflattern_animalTree(data.animalTree);
+
+  console.log(iterativeTreeLog(unflatternTree))
+  // Expected Output:
+  /*
+    <ul className="ul-tree">
+      <li className="li-tree">ant</li>
+      <li className="li-tree">bear</li>
+      <ul className="ul-tree">
+        <li className="li-tree">cat</li>
+        <li className="li-tree">dog</li>
+        <ul className="ul-tree">
+          <li className="li-tree">elephant</li>
+        </ul>
+      </ul>
+      <li className="li-tree">frog</li>
+    </ul>
+    */
 
   return (
     <div className="tree">
